@@ -88,7 +88,7 @@ float sampleDensity(vec3 p)
     float detail = noise(p * 0.08 + wind * 1.5);
 
     // --- Erosion (carves edges)
-    float erosion = noise(p * 0.15 - wind * 2.0);
+    float erosion = noise(p * 0.15 - wind);
 
     // Combine like UE
     float density = base;
@@ -171,7 +171,7 @@ void main()
             vec3 scatter = vec3(1.0) * absorb * baseLight * phase;
 
             color += scatter * transmittance;
-            transmittance *= exp(-absorb);
+            transmittance *= exp(-absorb * 1.0);
         }
 
         t += adaptiveStep;;

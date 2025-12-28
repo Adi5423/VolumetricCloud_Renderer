@@ -131,8 +131,10 @@ void main()
     vec3 color = vec3(0.0);
     float transmittance = 1.0;
 
-    const int STEPS = 160;
+    const int STEPS = 112;
     float stepSize = tMax / float(STEPS);
+    float stepMul = mix(1.0, 2.5, t / tMax);
+    float adaptiveStep = stepSize * stepMul;
 
     for (int i = 0; i < STEPS; i++)
     {
@@ -172,11 +174,11 @@ void main()
             transmittance *= exp(-absorb);
         }
 
-        t += stepSize;
+        t += adaptiveStep;;
         
         if (density < 0.0005)
         {
-            t += stepSize * 1.0; // skip faster in empty space
+            t += adaptiveStep * 1.0; // skip faster in empty space
             continue;
         }
     }

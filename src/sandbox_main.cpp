@@ -153,7 +153,7 @@ void main()
             density = sampleDensity(pos) * distFade;
         }
         
-
+        
 
         if (density > 0.0001)
         {
@@ -173,6 +173,12 @@ void main()
         }
 
         t += stepSize;
+        
+        if (density < 0.0005)
+        {
+            t += stepSize * 1.0; // skip faster in empty space
+            continue;
+        }
     }
 
     vec3 sky = skyColor(rayDir);

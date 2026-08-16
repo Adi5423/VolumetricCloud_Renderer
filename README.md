@@ -6,7 +6,7 @@ This repository gives you a clean and simple starting point to build any OpenGL-
 
 ---
 
-## 🚀 Features
+## Features
 
 * Modern **OpenGL 4.6 Core Profile**
 * **GLFW** for window + context creation
@@ -17,7 +17,7 @@ This repository gives you a clean and simple starting point to build any OpenGL-
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 * CMake 3.20+
 * C++20 compiler
@@ -26,7 +26,7 @@ This repository gives you a clean and simple starting point to build any OpenGL-
 
 ---
 
-## 🔧 Build Instructions
+## Build Instructions
 
 Open a terminal inside the project root and run:
 
@@ -51,7 +51,7 @@ You should see a window titled **GameWindow** with a blueish background, created
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 GameWindow/
@@ -72,7 +72,7 @@ GameWindow/
 
 ---
 
-## 🧩 What You Get
+## What You Get
 
 When you run the program, it:
 
@@ -92,7 +92,7 @@ Ready for you to add:
 
 ---
 
-## 📝 Notes
+## Notes
 
 * All dependencies are included in `vendor/` — no external installs required.
 * Paths are short and clean to avoid Windows object path issues.
@@ -101,14 +101,14 @@ Ready for you to add:
 
 ---
 
-### 👨‍💻 About the Developer
+### About the Developer
 
 **Aditya Tiwari**
-- 💼 LinkedIn: [Aditya Tiwari](https://www.linkedin.com/in/adii5423/)
-- 🐱 GitHub: [GitHub Profile](https://github.com/adi5423)
-- 📧 Email: adii54ti23@gmail.com
-- 🐦 Twitter: [@Adii5423](https://twitter.com/Adii5423)
-- 📧 Instagram: [@Adii5423.exe](https://instagram.com/Adii5423)
+- LinkedIn: [Aditya Tiwari](https://www.linkedin.com/in/adii5423/)
+- GitHub: [GitHub Profile](https://github.com/adi5423)
+- Email: adii54ti23@gmail.com
+- Twitter: [@Adii5423](https://twitter.com/Adii5423)
+- Instagram: [@Adii5423.exe](https://instagram.com/Adii5423)
 
 ---
 
@@ -117,7 +117,7 @@ Ready for you to add:
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Any contributions, suggestions, or improvements are welcome!
 
 
-## 📄 License
+## License
 
 See [`MIT License`](LICENSE.txt).
 
